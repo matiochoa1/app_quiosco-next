@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Quiosco Next
+
+Quiosco Next is a delivery food application with order management capabilities. This project allows users to browse through various food categories, add items to their cart, and manage their orders efficiently.
+
+## Features
+
+- Browse food items by categories
+- Add items to the cart
+- Increase or decrease item quantities in the cart
+- View order summary with total price
+- Remove items from the cart
+
+## Tech Stack
+
+### Frontend
+
+- **React**: A JavaScript library for building user interfaces.
+- **Next.js**: A React framework for server-side rendering and generating static websites.
+- **TypeScript**: A typed superset of JavaScript that compiles to plain JavaScript.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+
+### Backend
+
+- **Prisma**: An ORM (Object-Relational Mapping) tool for database management.
+- **Zustand**: A small, fast, and scalable state-management solution for React.
+
+### Other Tools
+
+- **Heroicons**: A set of free, MIT-licensed high-quality SVG icons for you to use in your web projects.
+- **Webpack**: A module bundler for JavaScript applications.
+
+## Project Structure
+
+- `components/`: Contains React components used throughout the application.
+- `pages/`: Contains Next.js pages for routing.
+- `prisma/`: Contains Prisma schema and database-related files.
+- `src/`: Contains additional source files like store and utility functions.
 
 ## Getting Started
 
-First, run the development server:
+To get started with the project, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **Clone the repository**:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   ```bash
+   git clone https://github.com/yourusername/quiosco-next.git
+   cd quiosco-next
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. **Install dependencies**:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   ```bash
+   npm install
+   ```
 
-## Learn More
+3. **Set up the database**:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   npx prisma migrate dev --name init
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. **Run the development server**:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```bash
+   npm run dev
+   ```
 
-## Deploy on Vercel
+5. **Open the application**:
+   Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+
+## License
+
+This project is licensed under the MIT License.
